@@ -3,3 +3,32 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --green-main: #3f703d;
+  --yellow: #ffe733;
+  --dark-font: #191010;
+  --dark-grey: #aaa;
+  --light-grey: #ddd;
+}
+
+body {
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr minmax(500px, 4fr);
+  grid-template-rows: 1fr minmax(250px, 5fr);
+}
+
+.header {
+  background: var(--light-grey);
+}
+
+.sidebar {
+  background: var(--green-main);
+  grid-row: 1 / -1;
+}
+
+.main {
+  background: var(--dark-grey);
+}
