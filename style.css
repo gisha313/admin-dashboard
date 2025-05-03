@@ -8,8 +8,11 @@
   --green-main: #3f703d;
   --yellow: #ffe733;
   --dark-font: #191010;
-  --dark-grey: #aaa;
-  --light-grey: #ddd;
+  --dark-grey: #ccc;
+  --light-grey: #eaeaea;
+
+  --profile-pic-small-size: 50px;
+  --profile-pic-big-size: 80px;
 }
 
 body {
@@ -32,6 +35,24 @@ ul {
 
 .header {
   background: var(--light-grey);
+  color: var(--dark-font);
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 48px;
+}
+
+.header > div > div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .sidebar {
@@ -60,6 +81,18 @@ ul {
   padding-bottom: 14px;
 }
 
-.main {
+.content {
   background: var(--dark-grey);
+}
+
+.profile-picture-small {
+  width: var(--profile-pic-small-size);
+  height: var(--profile-pic-small-size);
+  border-radius: calc(var(--profile-pic-small-size) / 2);
+}
+
+.profile-picture-big {
+  width: var(--profile-pic-big-size);
+  height: var(--profile-pic-big-size);
+  border-radius: calc(var(--profile-pic-big-size) / 2);
 }
