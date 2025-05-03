@@ -14,10 +14,20 @@
 
 body {
   height: 100vh;
+  font-size: 18px;
 
   display: grid;
   grid-template-columns: 1fr minmax(500px, 4fr);
   grid-template-rows: 1fr minmax(250px, 5fr);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .header {
@@ -26,7 +36,28 @@ body {
 
 .sidebar {
   background: var(--green-main);
+  color: #fff;
+
   grid-row: 1 / -1;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 48px;
+
+  padding: 30px;
+}
+
+.sidebar .logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.sidebar .top-links,
+.sidebar .bottom-links {
+  font-size: 1.6rem;
+}
+
+.sidebar li {
+  padding-bottom: 14px;
 }
 
 .main {
