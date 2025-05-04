@@ -8,7 +8,7 @@
   --green-main: #3f703d;
   --yellow: #ffe733;
   --dark-font: #191010;
-  --dark-grey: #ccc;
+  --dark-grey: #cbcbcb;
   --light-grey: #eaeaea;
 
   --profile-pic-small-size: 50px;
@@ -16,7 +16,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   font-size: 18px;
 
   display: grid;
@@ -42,17 +42,43 @@ ul {
 }
 
 .header > div {
-  display: flex;
+  display: grid;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
 
   padding: 12px 48px;
+}
+
+.top-bar {
+  grid-template-columns: 2fr 1fr;
+}
+
+.bottom-bar {
+  grid-template-columns: 1fr 2fr;
 }
 
 .header > div > div {
   display: flex;
   align-items: center;
   gap: 16px;
+
+  font-weight: 600;
+}
+
+.header > div > div:last-child {
+  justify-content: flex-end;
+}
+
+.header input[type="text"] {
+  appearance: none;
+  border: none;
+  background: var(--dark-grey);
+  line-height: 1.4;
+  padding: 0.3em 1em;
+  font-size: 1.2rem;
+  border-radius: 18px;
+  width: 100%;
 }
 
 .sidebar {
