@@ -8,8 +8,8 @@
   --green-main: #3f703d;
   --yellow: #ffe733;
   --dark-font: #191010;
-  --dark-grey: #cbcbcb;
-  --light-grey: #eaeaea;
+  --dark-grey: #dadada;
+  --light-grey: #f4f4f4;
 
   --profile-pic-small-size: 50px;
   --profile-pic-big-size: 80px;
@@ -150,29 +150,64 @@ ul {
   background: var(--dark-grey);
   display: grid;
   grid-template-columns: minmax(250px, 3fr) 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-auto-rows: 1fr;
   gap: 18px;
-  padding: 36px 16px;
+  padding: 36px 24px;
 }
 
 .projects {
   grid-row: 1 / 3;
+}
+
+.content > div {
   display: flex;
   flex-direction: column;
+  gap: 12px;
+}
+
+.content h1 {
+  font-size: 1.7rem;
 }
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-auto-rows: 250px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-auto-rows: max-content;
   gap: 24px;
   flex: 1;
 }
 
 .card {
   background: var(--light-grey);
-  border-radius: 12px;
-  height: 225px;
+  border-radius: 10px;
+}
+
+.projects .card {
+  padding: 36px 36px 36px 24px;
+  height: 250px;
+  border-left: 10px solid var(--yellow);
+}
+
+.card p {
+  color: #555;
+  font-size: 0.95rem;
+  padding-top: 4px;
+}
+
+.announcements .card {
+  padding: 12px 36px;
+}
+
+.announcement {
+  padding: 16px 0;
+}
+
+.announcement:not(:last-child) {
+  border-bottom: 1px solid #999;
+}
+
+.announcement h2 {
+  font-size: 1.3rem;
 }
 
 .profile-picture-small {
