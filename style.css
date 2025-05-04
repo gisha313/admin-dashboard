@@ -22,6 +22,12 @@ body {
   display: grid;
   grid-template-columns: 1fr minmax(500px, 4fr);
   grid-template-rows: 1fr minmax(250px, 5fr);
+
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
 }
 
 a {
