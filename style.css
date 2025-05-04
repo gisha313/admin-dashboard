@@ -22,7 +22,7 @@ body {
 
   display: grid;
   grid-template-columns: 1fr minmax(500px, 4fr);
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: auto 1fr;
 
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
@@ -46,6 +46,8 @@ ul {
 
   display: grid;
   grid-template-rows: 1fr 1fr;
+  gap: 6px;
+  padding: 12px 0;
 }
 
 .header > div {
@@ -54,7 +56,7 @@ ul {
   align-items: center;
   gap: 12px;
 
-  padding: 12px 48px;
+  padding: 0 48px;
 }
 
 .top-bar {
