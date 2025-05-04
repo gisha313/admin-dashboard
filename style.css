@@ -146,20 +146,24 @@ ul {
   padding-bottom: 14px;
 }
 
+.notifications {
+  min-width: none;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
 .content {
   background: var(--dark-grey);
   display: grid;
   grid-template-columns: minmax(250px, 3fr) 1fr;
-  grid-auto-rows: 1fr;
   gap: 18px;
   padding: 36px 24px;
 }
 
-.projects {
-  grid-row: 1 / 3;
-}
-
-.content > div {
+.projects,
+.announcements,
+.trending {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -180,6 +184,9 @@ ul {
 .card {
   background: var(--light-grey);
   border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .projects .card {
@@ -194,7 +201,8 @@ ul {
   padding-top: 4px;
 }
 
-.announcements .card {
+.announcements .card,
+.trending .card {
   padding: 12px 36px;
 }
 
@@ -208,6 +216,15 @@ ul {
 
 .announcement h2 {
   font-size: 1.3rem;
+}
+
+.trending .card {
+  gap: 24px;
+}
+
+.user-card {
+  display: flex;
+  gap: 14px;
 }
 
 .profile-picture-small {
