@@ -91,9 +91,29 @@ ul {
   font-size: 1.4rem;
 }
 
+.profile-section span {
+  margin-right: 24px;
+}
+
 .welcome-msg > p ~ p {
   font-size: 1.7rem;
   padding-top: 4px;
+}
+
+.action-btn {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  background: var(--green-main);
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+
+  height: 48px;
+  width: 128px;
+  border-radius: 24px;
+  padding: 0 24px;
+  margin-right: 18px;
 }
 
 .sidebar {
