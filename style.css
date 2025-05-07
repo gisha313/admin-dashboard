@@ -273,3 +273,17 @@ ul {
   height: 48px;
   width: 48px;
 }
+
+.actions {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  gap: 12px;
+}
+
+.actions .icon {
+  height: 32px;
+  width: 32px;
+  fill: var(--dark-font);
+}
