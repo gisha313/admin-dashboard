@@ -159,7 +159,7 @@ ul {
   display: grid;
   grid-template-columns: minmax(250px, 3fr) 1fr;
   gap: 18px;
-  padding: 36px 24px;
+  padding: 36px 24px 12px;
 }
 
 .projects,
