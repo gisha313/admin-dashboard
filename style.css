@@ -138,8 +138,9 @@ ul {
 
 .sidebar .top-links,
 .sidebar .bottom-links {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 700;
+  padding-left: 13px;
 }
 
 .sidebar li {
@@ -237,4 +238,38 @@ ul {
   width: var(--profile-pic-big-size);
   height: var(--profile-pic-big-size);
   border-radius: calc(var(--profile-pic-big-size) / 2);
+}
+
+.icon {
+  height: 28px;
+  width: 28px;
+}
+
+.icon.dark path {
+  fill: var(--dark-font);
+}
+
+.icon.light path {
+  fill: #fff;
+}
+
+.icon.light {
+  margin-top: 1px;
+}
+
+.top-links a,
+.bottom-links a {
+  display: flex;
+  gap: 18px;
+  width: fit-content;
+}
+
+.logo {
+  display: flex;
+  gap: 8px;
+}
+
+.logo .icon {
+  height: 48px;
+  width: 48px;
 }
